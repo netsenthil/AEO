@@ -16,31 +16,42 @@
 	if(g_form.isNewRecord())
 		{
 			g_form.clearOptions('aeo_status');
+			g_form.addOption('aeo_status',' Open','Open');
 			g_form.addOption('aeo_status',' Review','Review');
 		}
+	else if(!g_form.isNewRecord() && g_form.getValue('aeo_status') == 'Open')
+	   {
+		   g_form.clearOptions('aeo_status');
+			g_form.addOption('aeo_status','Open','Open');
+			g_form.addOption('aeo_status','Review','Review');
+	   }
   else if(!g_form.isNewRecord() && g_form.getValue('aeo_status') == 'Review')
 	   {
 		   g_form.clearOptions('aeo_status');
+		    g_form.addOption('aeo_status','Review','Review');
 			g_form.addOption('aeo_status','Confirm','Confirm');
 			g_form.addOption('aeo_status','Cancelled','Cancelled');
-		    g_form.addOption('aeo_status','Review','Review');
+		    
 	   }
 	else if(!g_form.isNewRecord() && g_form.getValue('aeo_status') == 'Confirm')
 	   {
 		   g_form.clearOptions('aeo_status');
+		   g_form.addOption('aeo_status','Confirm','Confirm');
 		   g_form.addOption('aeo_status','Complete','Complete');
-			g_form.addOption('aeo_status','Cancelled','Cancelled');
+		g_form.addOption('aeo_status','Cancelled','Cancelled');
 		   g_form.addOption('aeo_status',' Review','Review');
 	   }
 	else if(!g_form.isNewRecord() && g_form.getValue('aeo_status') == 'Cancelled')
 	   {
 		   g_form.clearOptions('aeo_status');
 		   g_form.addOption('aeo_status','Cancelled','Cancelled');
+		   g_form.setDisabled('aeo_status',true);
 	   }
 	else if(!g_form.isNewRecord() && g_form.getValue('aeo_status') == 'Complete')
 	   {
 		   g_form.clearOptions('aeo_status');
 		   g_form.addOption('aeo_status','Complete','Complete');
+		   g_form.setDisabled('aeo_status',true);
 	   }
 	
 }]]></script>
@@ -50,7 +61,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>2d706e8b0f4203009eb3758ce1050e38</sys_id>
-        <sys_mod_count>13</sys_mod_count>
+        <sys_mod_count>14</sys_mod_count>
         <sys_name>AEO Status Script</sys_name>
         <sys_overrides/>
         <sys_package display_value="MnA" source="x_98145_mna">54fc72fc0f0203009eb3758ce1050ece</sys_package>
@@ -58,7 +69,7 @@
         <sys_scope display_value="MnA">54fc72fc0f0203009eb3758ce1050ece</sys_scope>
         <sys_update_name>sys_script_client_2d706e8b0f4203009eb3758ce1050e38</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-10-31 09:09:04</sys_updated_on>
+        <sys_updated_on>2017-10-31 10:58:09</sys_updated_on>
         <table>x_98145_mna_aeo_process</table>
         <type>onLoad</type>
         <ui_type>10</ui_type>

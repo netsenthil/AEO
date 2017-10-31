@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<database>
-    <element extends="task" label="Action Register" max_length="40" name="x_98145_mna_action_register" sizeclass="5" type="collection">
-        <element label="AEORefNo" max_length="32" name="aeorefno" read_only="true" reference="x_98145_mna_aeo_process" type="reference"/>
-    </element>
-</database>

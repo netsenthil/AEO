@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element audit="true" label="AEO Process Actions" max_length="40" name="x_98145_mna_aeo_process_actions" type="collection">
+        <element label="AEORefNo" max_length="32" name="aeorefno" read_only="true" reference="x_98145_mna_aeo_process" type="reference"/>
+        <element display="true" label="ARRefNo" max_length="40" name="arrefno" read_only="true" type="string"/>
+        <element choice="3" default="Open" label="AR Status" mandatory="true" max_length="30" name="ar_status" type="choice">
+            <choice>
+                <element label="Closed" value="Closed"/>
+                <element label="Open" value="Open"/>
+            </choice>
+        </element>
+        <element label="Department Assigned" mandatory="true" max_length="32" name="department_assigned" reference="cmn_department" type="reference"/>
+        <element label="Description" max_length="500" name="description" type="string"/>
+        <element label="Person Assigned" mandatory="true" max_length="32" name="person_assigned" reference="sys_user" reference_qual="javascript: 'department='+ current.department_assigned" type="reference" use_reference_qualifier="advanced"/>
+        <element label="Results" max_length="500" name="results" type="journal"/>
+        <element label="Title" mandatory="true" max_length="200" name="title" type="string"/>
+        <element label="Work Notes" max_length="1000" name="work_notes" type="journal_input"/>
+        <index name="index">
+            <element name="department_assigned"/>
+        </index>
+        <index name="index2">
+            <element name="aeorefno"/>
+        </index>
+        <index name="index3">
+            <element name="person_assigned"/>
+        </index>
+    </element>
+</database>

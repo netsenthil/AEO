@@ -2,18 +2,19 @@
 <database>
     <element audit="true" label="AEO Process" max_length="40" name="x_98145_mna_aeo_process" type="collection">
         <element label="Activity List" max_length="4000" name="activity_list" type="journal_list"/>
-        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return ;  // return the calculated value&#13;&#10;&#13;&#10;})(current);" display="true" label="AEORefNo" max_length="40" name="aeorefno" read_only="true" type="string"/>
+        <element calculation="(function calculatedFieldValue(current) {&#10;&#10;&#9;// Add your code here&#10;&#9;return ;  // return the calculated value&#10;&#10;})(current);" display="true" label="AEORefNo" max_length="40" name="aeorefno" read_only="true" type="string"/>
         <element choice="3" default="None" label="Aeo Status" mandatory="true" max_length="50" name="aeo_status" type="choice">
             <choice>
                 <element label="Cancelled" value="Cancelled"/>
                 <element label="Complete" value="Complete"/>
                 <element label="Confirm" value="Confirm"/>
+                <element label="Open" value="Open"/>
                 <element label="Review" value="Review"/>
             </choice>
         </element>
         <element label="Area" mandatory="true" max_length="32" name="area" reference="x_98145_mna_area" type="reference"/>
         <element label="Confirmer" max_length="32" name="confirmer" read_only="true" reference="sys_user" type="reference"/>
-        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Department" mandatory="true" max_length="32" name="department" reference="cmn_department" reference_qual="javascript: 'x_98145_mna_location='+ current.location" type="reference" use_reference_qualifier="advanced"/>
+        <element label="Department" mandatory="true" max_length="32" name="department" reference="cmn_department" reference_qual="javascript: 'x_98145_mna_location='+ current.location" type="reference" use_reference_qualifier="advanced"/>
         <element label="Description" max_length="400" name="description" type="string"/>
         <element label="Location" mandatory="true" max_length="32" name="location" reference="cmn_location" type="reference"/>
         <element label="Procedure" mandatory="true" max_length="32" name="procedure" reference="x_98145_mna_aeo_procedures" reference_qual="javascript:'area='+ current.area" type="reference" use_reference_qualifier="advanced"/>

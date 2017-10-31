@@ -2,18 +2,20 @@
 <record_update table="wf_workflow_version">
     <wf_workflow_version action="INSERT_OR_UPDATE">
         <active>true</active>
-        <activity_stages>{"subflows":[],"stages":{},"activities":{},"ends":["202d764b0f8203009eb3758ce1050ee3"]}</activity_stages>
+        <activity_stages>{"subflows":[],"stages":{},"activities":{},"ends":["326d87870fc203009eb3758ce1050ed7"]}</activity_stages>
         <after_business_rules>false</after_business_rules>
         <checked_out/>
         <checked_out_by/>
         <column_renderer display_value="Workflow-driven">a56213111b030100adca1e094f0713ac</column_renderer>
-        <condition/>
+        <condition table="x_98145_mna_aeo_process">aeo_status=Review^EQ<item endquery="false" field="aeo_status" goto="false" newquery="false" operator="=" or="false" value="Review"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
         <condition_type>run_match</condition_type>
         <description/>
-        <expected_sequences>6c2d764b0f8203009eb3758ce1050ee3,242d764b0f8203009eb3758ce1050ee1,e82d764b0f8203009eb3758ce1050ee7,e82d764b0f8203009eb3758ce1050ee4,e42d764b0f8203009eb3758ce1050ee6,602df64b0f8203009eb3758ce1050e2c,202d764b0f8203009eb3758ce1050ee3</expected_sequences>
+        <expected_sequences>f26d87870fc203009eb3758ce1050edd,f26d87870fc203009eb3758ce1050ed8,766dc7870fc203009eb3758ce1050e9e,7a6dc7870fc203009eb3758ce1050e9c,f66dc7870fc203009eb3758ce1050e99,be6d87870fc203009eb3758ce1050eda,7e6dc7870fc203009eb3758ce1050e9a,326d87870fc203009eb3758ce1050ed7</expected_sequences>
         <expected_time>1970-01-01 14:00:00</expected_time>
         <expected_time_type/>
-        <full_sequences>6c2d764b0f8203009eb3758ce1050ee3,242d764b0f8203009eb3758ce1050ee1,e82d764b0f8203009eb3758ce1050ee7,e82d764b0f8203009eb3758ce1050ee4,e42d764b0f8203009eb3758ce1050ee6,602df64b0f8203009eb3758ce1050e2c,202d764b0f8203009eb3758ce1050ee3,e82d764b0f8203009eb3758ce1050ede</full_sequences>
+        <full_sequences>f26d87870fc203009eb3758ce1050edd,f26d87870fc203009eb3758ce1050ed8,766dc7870fc203009eb3758ce1050e9e,7a6dc7870fc203009eb3758ce1050e9c,f66dc7870fc203009eb3758ce1050e99,be6d87870fc203009eb3758ce1050eda,326d87870fc203009eb3758ce1050ed7,7e6dc7870fc203009eb3758ce1050e9a</full_sequences>
         <journal/>
         <max_activity_count>100</max_activity_count>
         <name>AEO Process Flow</name>
@@ -28,13 +30,13 @@
         <schedule/>
         <stage_field/>
         <stage_order>computed</stage_order>
-        <start display_value="Begin">6c2d764b0f8203009eb3758ce1050ee3</start>
+        <start display_value="Begin">f26d87870fc203009eb3758ce1050edd</start>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2017-10-31 09:47:31</sys_created_on>
-        <sys_id>ec2d764b0f8203009eb3758ce1050edc</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_created_on>2017-10-31 10:58:40</sys_created_on>
+        <sys_id>f66d87870fc203009eb3758ce1050ed4</sys_id>
+        <sys_mod_count>5</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-10-31 10:28:19</sys_updated_on>
+        <sys_updated_on>2017-10-31 11:05:19</sys_updated_on>
         <table>x_98145_mna_aeo_process</table>
         <timezone/>
         <validated>true</validated>
@@ -80,44 +82,44 @@
         <pinned_version/>
         <stage/>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2017-10-31 09:47:31</sys_created_on>
-        <sys_id>e42d764b0f8203009eb3758ce1050ee6</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_created_on>2017-10-31 10:58:40</sys_created_on>
+        <sys_id>f66dc7870fc203009eb3758ce1050e99</sys_id>
+        <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-10-31 10:21:34</sys_updated_on>
+        <sys_updated_on>2017-10-31 10:58:40</sys_updated_on>
         <timeout>1970-01-01 00:00:00</timeout>
         <vars/>
         <width/>
-        <workflow_version display_value="AEO Process Flow">ec2d764b0f8203009eb3758ce1050edc</workflow_version>
+        <workflow_version display_value="AEO Process Flow">f66d87870fc203009eb3758ce1050ed4</workflow_version>
         <x>622</x>
         <y>289</y>
     </wf_activity>
-    <sys_variable_value action="delete_multiple" query="document_key=e42d764b0f8203009eb3758ce1050ee6"/>
+    <sys_variable_value action="delete_multiple" query="document_key=f66dc7870fc203009eb3758ce1050e99"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>e42d764b0f8203009eb3758ce1050ee6</document_key>
+        <document_key>f66dc7870fc203009eb3758ce1050e99</document_key>
         <order>1</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2017-10-31 09:47:31</sys_created_on>
-        <sys_id>ac2d764b0f8203009eb3758ce1050ee6</sys_id>
+        <sys_created_on>2017-10-31 10:58:40</sys_created_on>
+        <sys_id>326dc7870fc203009eb3758ce1050e9a</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-10-31 09:47:31</sys_updated_on>
+        <sys_updated_on>2017-10-31 10:58:40</sys_updated_on>
         <value/>
         <variable display_value="">c35dc4cd0a0a0ba96248a70990c1ac54</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>e42d764b0f8203009eb3758ce1050ee6</document_key>
+        <document_key>f66dc7870fc203009eb3758ce1050e99</document_key>
         <order>2</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2017-10-31 09:47:31</sys_created_on>
-        <sys_id>e82d764b0f8203009eb3758ce1050ee6</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_created_on>2017-10-31 10:58:40</sys_created_on>
+        <sys_id>7e6dc7870fc203009eb3758ce1050e99</sys_id>
+        <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-10-31 10:21:34</sys_updated_on>
+        <sys_updated_on>2017-10-31 10:58:40</sys_updated_on>
         <value>// Set the variable 'answer' to true or false to indicate if the condition has been met or not.&#13;
 	if(current.aeo_status == "Cancelled" || current.aeo_status == "Review" || current.aeo_status == "Complete" )&#13;
 	{&#13;
@@ -128,29 +130,29 @@
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>e42d764b0f8203009eb3758ce1050ee6</document_key>
+        <document_key>f66dc7870fc203009eb3758ce1050e99</document_key>
         <order>1</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2017-10-31 09:47:31</sys_created_on>
-        <sys_id>ac2d764b0f8203009eb3758ce1050ee6</sys_id>
+        <sys_created_on>2017-10-31 10:58:40</sys_created_on>
+        <sys_id>326dc7870fc203009eb3758ce1050e9a</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-10-31 09:47:31</sys_updated_on>
+        <sys_updated_on>2017-10-31 10:58:40</sys_updated_on>
         <value/>
         <variable display_value="">c35dc4cd0a0a0ba96248a70990c1ac54</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>e42d764b0f8203009eb3758ce1050ee6</document_key>
+        <document_key>f66dc7870fc203009eb3758ce1050e99</document_key>
         <order>2</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2017-10-31 09:47:31</sys_created_on>
-        <sys_id>e82d764b0f8203009eb3758ce1050ee6</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_created_on>2017-10-31 10:58:40</sys_created_on>
+        <sys_id>7e6dc7870fc203009eb3758ce1050e99</sys_id>
+        <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-10-31 10:21:34</sys_updated_on>
+        <sys_updated_on>2017-10-31 10:58:40</sys_updated_on>
         <value>// Set the variable 'answer' to true or false to indicate if the condition has been met or not.&#13;
 	if(current.aeo_status == "Cancelled" || current.aeo_status == "Review" || current.aeo_status == "Complete" )&#13;
 	{&#13;
@@ -160,7 +162,7 @@
         <variable display_value="">c35debce0a0a0ba96248a709440cf31a</variable>
     </sys_variable_value>
     <wf_condition action="INSERT_OR_UPDATE">
-        <activity display_value="">e42d764b0f8203009eb3758ce1050ee6</activity>
+        <activity display_value="">f66dc7870fc203009eb3758ce1050e99</activity>
         <condition>true</condition>
         <condition_default/>
         <condition_type>standard</condition_type>
@@ -174,11 +176,11 @@
         <short_description/>
         <skip_during_generate>false</skip_during_generate>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2017-10-31 09:47:31</sys_created_on>
-        <sys_id>642d764b0f8203009eb3758ce1050ee7</sys_id>
+        <sys_created_on>2017-10-31 10:58:40</sys_created_on>
+        <sys_id>f66dc7870fc203009eb3758ce1050e9a</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-10-31 09:47:31</sys_updated_on>
+        <sys_updated_on>2017-10-31 10:58:40</sys_updated_on>
     </wf_condition>
     <wf_activity action="INSERT_OR_UPDATE">
         <activity_definition display_value="Begin">c7a5e32c0a0a0b3a002377c24ed8ea76</activity_definition>
@@ -196,21 +198,21 @@
         <pinned_version/>
         <stage/>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2017-10-31 09:47:31</sys_created_on>
-        <sys_id>6c2d764b0f8203009eb3758ce1050ee3</sys_id>
+        <sys_created_on>2017-10-31 10:58:40</sys_created_on>
+        <sys_id>f26d87870fc203009eb3758ce1050edd</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-10-31 09:47:31</sys_updated_on>
+        <sys_updated_on>2017-10-31 10:58:40</sys_updated_on>
         <timeout>1970-01-01 00:00:00</timeout>
         <vars/>
         <width>80</width>
-        <workflow_version display_value="AEO Process Flow">ec2d764b0f8203009eb3758ce1050edc</workflow_version>
+        <workflow_version display_value="AEO Process Flow">f66d87870fc203009eb3758ce1050ed4</workflow_version>
         <x>20</x>
         <y>20</y>
     </wf_activity>
-    <sys_variable_value action="delete_multiple" query="document_key=6c2d764b0f8203009eb3758ce1050ee3"/>
+    <sys_variable_value action="delete_multiple" query="document_key=f26d87870fc203009eb3758ce1050edd"/>
     <wf_condition action="INSERT_OR_UPDATE">
-        <activity display_value="Begin">6c2d764b0f8203009eb3758ce1050ee3</activity>
+        <activity display_value="Begin">f26d87870fc203009eb3758ce1050edd</activity>
         <condition>true</condition>
         <condition_default/>
         <condition_type>standard</condition_type>
@@ -224,11 +226,11 @@
         <short_description/>
         <skip_during_generate>false</skip_during_generate>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2017-10-31 09:47:31</sys_created_on>
-        <sys_id>642d764b0f8203009eb3758ce1050ee4</sys_id>
+        <sys_created_on>2017-10-31 10:58:40</sys_created_on>
+        <sys_id>7e6d87870fc203009eb3758ce1050edd</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-10-31 09:47:31</sys_updated_on>
+        <sys_updated_on>2017-10-31 10:58:40</sys_updated_on>
     </wf_condition>
     <wf_activity action="INSERT_OR_UPDATE">
         <activity_definition display_value="Switch">f84eda480a0a3c1800a6fa8c7badf346</activity_definition>
@@ -246,105 +248,105 @@
         <pinned_version/>
         <stage/>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2017-10-31 09:47:31</sys_created_on>
-        <sys_id>602df64b0f8203009eb3758ce1050e2c</sys_id>
+        <sys_created_on>2017-10-31 10:58:40</sys_created_on>
+        <sys_id>be6d87870fc203009eb3758ce1050eda</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-10-31 09:47:31</sys_updated_on>
+        <sys_updated_on>2017-10-31 10:58:40</sys_updated_on>
         <timeout>1970-01-01 00:00:00</timeout>
         <vars/>
         <width/>
-        <workflow_version display_value="AEO Process Flow">ec2d764b0f8203009eb3758ce1050edc</workflow_version>
+        <workflow_version display_value="AEO Process Flow">f66d87870fc203009eb3758ce1050ed4</workflow_version>
         <x>342</x>
         <y>435</y>
     </wf_activity>
-    <sys_variable_value action="delete_multiple" query="document_key=602df64b0f8203009eb3758ce1050e2c"/>
+    <sys_variable_value action="delete_multiple" query="document_key=be6d87870fc203009eb3758ce1050eda"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>602df64b0f8203009eb3758ce1050e2c</document_key>
-        <order>100</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2017-10-31 09:47:31</sys_created_on>
-        <sys_id>282df64b0f8203009eb3758ce1050e2c</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-10-31 09:47:31</sys_updated_on>
-        <value>field</value>
-        <variable display_value="">f85385830a0a3c18008599b17b971cbd</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>wf_activity</document>
-        <document_key>602df64b0f8203009eb3758ce1050e2c</document_key>
+        <document_key>be6d87870fc203009eb3758ce1050eda</document_key>
         <order>300</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2017-10-31 09:47:31</sys_created_on>
-        <sys_id>642df64b0f8203009eb3758ce1050e2c</sys_id>
+        <sys_created_on>2017-10-31 10:58:40</sys_created_on>
+        <sys_id>366d87870fc203009eb3758ce1050edb</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-10-31 09:47:31</sys_updated_on>
+        <sys_updated_on>2017-10-31 10:58:40</sys_updated_on>
         <value>aeo_status</value>
         <variable display_value="">f8575c7d0a0a3c1800b8f4d25403c852</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>602df64b0f8203009eb3758ce1050e2c</document_key>
+        <document_key>be6d87870fc203009eb3758ce1050eda</document_key>
         <order>200</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2017-10-31 09:47:31</sys_created_on>
-        <sys_id>e82df64b0f8203009eb3758ce1050e2c</sys_id>
+        <sys_created_on>2017-10-31 10:58:40</sys_created_on>
+        <sys_id>ba6d87870fc203009eb3758ce1050edb</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-10-31 09:47:31</sys_updated_on>
+        <sys_updated_on>2017-10-31 10:58:40</sys_updated_on>
         <value/>
         <variable display_value="">f855a43e0a0a3c180106a59800a50a22</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>602df64b0f8203009eb3758ce1050e2c</document_key>
+        <document_key>be6d87870fc203009eb3758ce1050eda</document_key>
         <order>100</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2017-10-31 09:47:31</sys_created_on>
-        <sys_id>282df64b0f8203009eb3758ce1050e2c</sys_id>
+        <sys_created_on>2017-10-31 10:58:40</sys_created_on>
+        <sys_id>f66d87870fc203009eb3758ce1050edb</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-10-31 09:47:31</sys_updated_on>
+        <sys_updated_on>2017-10-31 10:58:40</sys_updated_on>
         <value>field</value>
         <variable display_value="">f85385830a0a3c18008599b17b971cbd</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>602df64b0f8203009eb3758ce1050e2c</document_key>
+        <document_key>be6d87870fc203009eb3758ce1050eda</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-10-31 10:58:40</sys_created_on>
+        <sys_id>f66d87870fc203009eb3758ce1050edb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-10-31 10:58:40</sys_updated_on>
+        <value>field</value>
+        <variable display_value="">f85385830a0a3c18008599b17b971cbd</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>be6d87870fc203009eb3758ce1050eda</document_key>
         <order>200</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2017-10-31 09:47:31</sys_created_on>
-        <sys_id>e82df64b0f8203009eb3758ce1050e2c</sys_id>
+        <sys_created_on>2017-10-31 10:58:40</sys_created_on>
+        <sys_id>ba6d87870fc203009eb3758ce1050edb</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-10-31 09:47:31</sys_updated_on>
+        <sys_updated_on>2017-10-31 10:58:40</sys_updated_on>
         <value/>
         <variable display_value="">f855a43e0a0a3c180106a59800a50a22</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>602df64b0f8203009eb3758ce1050e2c</document_key>
+        <document_key>be6d87870fc203009eb3758ce1050eda</document_key>
         <order>300</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2017-10-31 09:47:31</sys_created_on>
-        <sys_id>642df64b0f8203009eb3758ce1050e2c</sys_id>
+        <sys_created_on>2017-10-31 10:58:40</sys_created_on>
+        <sys_id>366d87870fc203009eb3758ce1050edb</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-10-31 09:47:31</sys_updated_on>
+        <sys_updated_on>2017-10-31 10:58:40</sys_updated_on>
         <value>aeo_status</value>
         <variable display_value="">f8575c7d0a0a3c1800b8f4d25403c852</variable>
     </sys_variable_value>
     <wf_condition action="INSERT_OR_UPDATE">
-        <activity display_value="Check AEO Status">602df64b0f8203009eb3758ce1050e2c</activity>
+        <activity display_value="Check AEO Status">be6d87870fc203009eb3758ce1050eda</activity>
         <condition>activity.result == 'Cancelled'</condition>
         <condition_default/>
         <condition_type>standard</condition_type>
@@ -358,14 +360,14 @@
         <short_description/>
         <skip_during_generate>false</skip_during_generate>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2017-10-31 09:47:31</sys_created_on>
-        <sys_id>242df64b0f8203009eb3758ce1050e2d</sys_id>
+        <sys_created_on>2017-10-31 10:58:40</sys_created_on>
+        <sys_id>726d87870fc203009eb3758ce1050edc</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-10-31 09:47:31</sys_updated_on>
+        <sys_updated_on>2017-10-31 10:58:40</sys_updated_on>
     </wf_condition>
     <wf_condition action="INSERT_OR_UPDATE">
-        <activity display_value="Check AEO Status">602df64b0f8203009eb3758ce1050e2c</activity>
+        <activity display_value="Check AEO Status">be6d87870fc203009eb3758ce1050eda</activity>
         <condition>activity.result == 'Complete'</condition>
         <condition_default/>
         <condition_type>standard</condition_type>
@@ -379,14 +381,14 @@
         <short_description/>
         <skip_during_generate>false</skip_during_generate>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2017-10-31 09:47:31</sys_created_on>
-        <sys_id>a02df64b0f8203009eb3758ce1050e2d</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_created_on>2017-10-31 10:58:40</sys_created_on>
+        <sys_id>f26d87870fc203009eb3758ce1050edc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-10-31 10:21:58</sys_updated_on>
+        <sys_updated_on>2017-10-31 10:58:40</sys_updated_on>
     </wf_condition>
     <wf_condition action="INSERT_OR_UPDATE">
-        <activity display_value="Check AEO Status">602df64b0f8203009eb3758ce1050e2c</activity>
+        <activity display_value="Check AEO Status">be6d87870fc203009eb3758ce1050eda</activity>
         <condition>activity.result == 'Review'</condition>
         <condition_default/>
         <condition_type>standard</condition_type>
@@ -400,11 +402,11 @@
         <short_description/>
         <skip_during_generate>false</skip_during_generate>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2017-10-31 09:47:31</sys_created_on>
-        <sys_id>a42df64b0f8203009eb3758ce1050e2d</sys_id>
+        <sys_created_on>2017-10-31 10:58:40</sys_created_on>
+        <sys_id>766d87870fc203009eb3758ce1050edc</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-10-31 09:47:31</sys_updated_on>
+        <sys_updated_on>2017-10-31 10:58:40</sys_updated_on>
     </wf_condition>
     <wf_activity action="INSERT_OR_UPDATE">
         <activity_definition display_value="End">c7a66f7d0a0a0b3a004544a6d2f14076</activity_definition>
@@ -422,19 +424,19 @@
         <pinned_version/>
         <stage/>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2017-10-31 09:47:31</sys_created_on>
-        <sys_id>202d764b0f8203009eb3758ce1050ee3</sys_id>
+        <sys_created_on>2017-10-31 10:58:40</sys_created_on>
+        <sys_id>326d87870fc203009eb3758ce1050ed7</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-10-31 09:47:31</sys_updated_on>
+        <sys_updated_on>2017-10-31 10:58:40</sys_updated_on>
         <timeout>1970-01-01 00:00:00</timeout>
         <vars/>
         <width>80</width>
-        <workflow_version display_value="AEO Process Flow">ec2d764b0f8203009eb3758ce1050edc</workflow_version>
+        <workflow_version display_value="AEO Process Flow">f66d87870fc203009eb3758ce1050ed4</workflow_version>
         <x>497</x>
         <y>38</y>
     </wf_activity>
-    <sys_variable_value action="delete_multiple" query="document_key=202d764b0f8203009eb3758ce1050ee3"/>
+    <sys_variable_value action="delete_multiple" query="document_key=326d87870fc203009eb3758ce1050ed7"/>
     <wf_activity action="INSERT_OR_UPDATE">
         <activity_definition display_value="Notification">0a6c97790a0a0b2756919eb960284334</activity_definition>
         <activity_definition_updated>false</activity_definition_updated>
@@ -451,174 +453,87 @@
         <pinned_version/>
         <stage/>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2017-10-31 09:47:31</sys_created_on>
-        <sys_id>e82d764b0f8203009eb3758ce1050ee4</sys_id>
+        <sys_created_on>2017-10-31 10:58:40</sys_created_on>
+        <sys_id>7a6dc7870fc203009eb3758ce1050e9c</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-10-31 09:47:31</sys_updated_on>
+        <sys_updated_on>2017-10-31 10:58:40</sys_updated_on>
         <timeout>1970-01-01 00:00:00</timeout>
         <vars/>
         <width/>
-        <workflow_version display_value="AEO Process Flow">ec2d764b0f8203009eb3758ce1050edc</workflow_version>
+        <workflow_version display_value="AEO Process Flow">f66d87870fc203009eb3758ce1050ed4</workflow_version>
         <x>299</x>
         <y>202</y>
     </wf_activity>
-    <sys_variable_value action="delete_multiple" query="document_key=e82d764b0f8203009eb3758ce1050ee4"/>
+    <sys_variable_value action="delete_multiple" query="document_key=7a6dc7870fc203009eb3758ce1050e9c"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>e82d764b0f8203009eb3758ce1050ee4</document_key>
-        <order>400</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2017-10-31 09:47:31</sys_created_on>
-        <sys_id>202d764b0f8203009eb3758ce1050ee5</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-10-31 09:47:31</sys_updated_on>
-        <value>0</value>
-        <variable display_value="">6d6816cd0a6a803f0853a8df38007572</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>wf_activity</document>
-        <document_key>e82d764b0f8203009eb3758ce1050ee4</document_key>
-        <order>150</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2017-10-31 09:47:31</sys_created_on>
-        <sys_id>2c2d764b0f8203009eb3758ce1050ee5</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-10-31 09:47:31</sys_updated_on>
-        <value/>
-        <variable display_value="">ae2121c70a0a0b3459708c9a60cd7312</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>wf_activity</document>
-        <document_key>e82d764b0f8203009eb3758ce1050ee4</document_key>
-        <order>300</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2017-10-31 09:47:31</sys_created_on>
-        <sys_id>682d764b0f8203009eb3758ce1050ee5</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-10-31 09:47:31</sys_updated_on>
-        <value>Hi ${confirmer.first_name},&#13;
-&#13;
-AEO Process request has been reviewed by ${reviewer.first_name}&#13;
-&#13;
-Below are the details:&#13;
-Process Name: ${process_name}&#13;
-Description: ${description}&#13;
-Department: ${department}&#13;
-Aeo Status: ${aeo_status}&#13;
-Results: ${results}&#13;
-Please review the AEO Process record for Department: ${department} by opening the link ${URI}&#13;
-&#13;
-Activity List:&#13;
-${activity_list}&#13;
-&#13;
-Thanks,&#13;
-AEO Process Team&#13;
-</value>
-        <variable display_value="">c35db5a50a0a0ba96248a70938ae8de6</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>wf_activity</document>
-        <document_key>e82d764b0f8203009eb3758ce1050ee4</document_key>
-        <order>100</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2017-10-31 09:47:31</sys_created_on>
-        <sys_id>6c2d764b0f8203009eb3758ce1050ee4</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-10-31 09:47:31</sys_updated_on>
-        <value>${confirmer}</value>
-        <variable display_value="">c35daa890a0a0ba96248a709c32994d6</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>wf_activity</document>
-        <document_key>e82d764b0f8203009eb3758ce1050ee4</document_key>
+        <document_key>7a6dc7870fc203009eb3758ce1050e9c</document_key>
         <order>200</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2017-10-31 09:47:31</sys_created_on>
-        <sys_id>a42d764b0f8203009eb3758ce1050ee5</sys_id>
+        <sys_created_on>2017-10-31 10:58:40</sys_created_on>
+        <sys_id>366dc7870fc203009eb3758ce1050e9d</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-10-31 09:47:31</sys_updated_on>
+        <sys_updated_on>2017-10-31 10:58:40</sys_updated_on>
         <value>AEO Process has been ${process_name} has been sent for Confirmation</value>
         <variable display_value="">c35db2180a0a0ba96248a709d1b6df20</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>e82d764b0f8203009eb3758ce1050ee4</document_key>
+        <document_key>7a6dc7870fc203009eb3758ce1050e9c</document_key>
         <order>500</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2017-10-31 09:47:31</sys_created_on>
-        <sys_id>e02d764b0f8203009eb3758ce1050ee5</sys_id>
+        <sys_created_on>2017-10-31 10:58:40</sys_created_on>
+        <sys_id>726dc7870fc203009eb3758ce1050e9d</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-10-31 09:47:31</sys_updated_on>
+        <sys_updated_on>2017-10-31 10:58:40</sys_updated_on>
         <value>// Set the variable 'answer' to a comma-separated list of user or group sys_ids that you want the email sent to.&#13;
 </value>
         <variable display_value="">c35dae3d0a0a0ba96248a7098ed9b4aa</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>e82d764b0f8203009eb3758ce1050ee4</document_key>
-        <order>100</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2017-10-31 09:47:31</sys_created_on>
-        <sys_id>6c2d764b0f8203009eb3758ce1050ee4</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-10-31 09:47:31</sys_updated_on>
-        <value>${confirmer}</value>
-        <variable display_value="">c35daa890a0a0ba96248a709c32994d6</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>wf_activity</document>
-        <document_key>e82d764b0f8203009eb3758ce1050ee4</document_key>
+        <document_key>7a6dc7870fc203009eb3758ce1050e9c</document_key>
         <order>150</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2017-10-31 09:47:31</sys_created_on>
-        <sys_id>2c2d764b0f8203009eb3758ce1050ee5</sys_id>
+        <sys_created_on>2017-10-31 10:58:40</sys_created_on>
+        <sys_id>ba6dc7870fc203009eb3758ce1050e9d</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-10-31 09:47:31</sys_updated_on>
+        <sys_updated_on>2017-10-31 10:58:40</sys_updated_on>
         <value/>
         <variable display_value="">ae2121c70a0a0b3459708c9a60cd7312</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>e82d764b0f8203009eb3758ce1050ee4</document_key>
-        <order>200</order>
+        <document_key>7a6dc7870fc203009eb3758ce1050e9c</document_key>
+        <order>400</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2017-10-31 09:47:31</sys_created_on>
-        <sys_id>a42d764b0f8203009eb3758ce1050ee5</sys_id>
+        <sys_created_on>2017-10-31 10:58:40</sys_created_on>
+        <sys_id>be6dc7870fc203009eb3758ce1050e9c</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-10-31 09:47:31</sys_updated_on>
-        <value>AEO Process has been ${process_name} has been sent for Confirmation</value>
-        <variable display_value="">c35db2180a0a0ba96248a709d1b6df20</variable>
+        <sys_updated_on>2017-10-31 10:58:40</sys_updated_on>
+        <value>0</value>
+        <variable display_value="">6d6816cd0a6a803f0853a8df38007572</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>e82d764b0f8203009eb3758ce1050ee4</document_key>
+        <document_key>7a6dc7870fc203009eb3758ce1050e9c</document_key>
         <order>300</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2017-10-31 09:47:31</sys_created_on>
-        <sys_id>682d764b0f8203009eb3758ce1050ee5</sys_id>
+        <sys_created_on>2017-10-31 10:58:40</sys_created_on>
+        <sys_id>f66dc7870fc203009eb3758ce1050e9d</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-10-31 09:47:31</sys_updated_on>
+        <sys_updated_on>2017-10-31 10:58:40</sys_updated_on>
         <value>Hi ${confirmer.first_name},&#13;
 &#13;
 AEO Process request has been reviewed by ${reviewer.first_name}&#13;
@@ -641,35 +556,122 @@ AEO Process Team&#13;
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>e82d764b0f8203009eb3758ce1050ee4</document_key>
+        <document_key>7a6dc7870fc203009eb3758ce1050e9c</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-10-31 10:58:40</sys_created_on>
+        <sys_id>fa6dc7870fc203009eb3758ce1050e9c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-10-31 10:58:40</sys_updated_on>
+        <value>${confirmer}</value>
+        <variable display_value="">c35daa890a0a0ba96248a709c32994d6</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>7a6dc7870fc203009eb3758ce1050e9c</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-10-31 10:58:40</sys_created_on>
+        <sys_id>fa6dc7870fc203009eb3758ce1050e9c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-10-31 10:58:40</sys_updated_on>
+        <value>${confirmer}</value>
+        <variable display_value="">c35daa890a0a0ba96248a709c32994d6</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>7a6dc7870fc203009eb3758ce1050e9c</document_key>
+        <order>150</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-10-31 10:58:40</sys_created_on>
+        <sys_id>ba6dc7870fc203009eb3758ce1050e9d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-10-31 10:58:40</sys_updated_on>
+        <value/>
+        <variable display_value="">ae2121c70a0a0b3459708c9a60cd7312</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>7a6dc7870fc203009eb3758ce1050e9c</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-10-31 10:58:40</sys_created_on>
+        <sys_id>366dc7870fc203009eb3758ce1050e9d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-10-31 10:58:40</sys_updated_on>
+        <value>AEO Process has been ${process_name} has been sent for Confirmation</value>
+        <variable display_value="">c35db2180a0a0ba96248a709d1b6df20</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>7a6dc7870fc203009eb3758ce1050e9c</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-10-31 10:58:40</sys_created_on>
+        <sys_id>f66dc7870fc203009eb3758ce1050e9d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-10-31 10:58:40</sys_updated_on>
+        <value>Hi ${confirmer.first_name},&#13;
+&#13;
+AEO Process request has been reviewed by ${reviewer.first_name}&#13;
+&#13;
+Below are the details:&#13;
+Process Name: ${process_name}&#13;
+Description: ${description}&#13;
+Department: ${department}&#13;
+Aeo Status: ${aeo_status}&#13;
+Results: ${results}&#13;
+Please review the AEO Process record for Department: ${department} by opening the link ${URI}&#13;
+&#13;
+Activity List:&#13;
+${activity_list}&#13;
+&#13;
+Thanks,&#13;
+AEO Process Team&#13;
+</value>
+        <variable display_value="">c35db5a50a0a0ba96248a70938ae8de6</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>7a6dc7870fc203009eb3758ce1050e9c</document_key>
         <order>400</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2017-10-31 09:47:31</sys_created_on>
-        <sys_id>202d764b0f8203009eb3758ce1050ee5</sys_id>
+        <sys_created_on>2017-10-31 10:58:40</sys_created_on>
+        <sys_id>be6dc7870fc203009eb3758ce1050e9c</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-10-31 09:47:31</sys_updated_on>
+        <sys_updated_on>2017-10-31 10:58:40</sys_updated_on>
         <value>0</value>
         <variable display_value="">6d6816cd0a6a803f0853a8df38007572</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>e82d764b0f8203009eb3758ce1050ee4</document_key>
+        <document_key>7a6dc7870fc203009eb3758ce1050e9c</document_key>
         <order>500</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2017-10-31 09:47:31</sys_created_on>
-        <sys_id>e02d764b0f8203009eb3758ce1050ee5</sys_id>
+        <sys_created_on>2017-10-31 10:58:40</sys_created_on>
+        <sys_id>726dc7870fc203009eb3758ce1050e9d</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-10-31 09:47:31</sys_updated_on>
+        <sys_updated_on>2017-10-31 10:58:40</sys_updated_on>
         <value>// Set the variable 'answer' to a comma-separated list of user or group sys_ids that you want the email sent to.&#13;
 </value>
         <variable display_value="">c35dae3d0a0a0ba96248a7098ed9b4aa</variable>
     </sys_variable_value>
     <wf_condition action="INSERT_OR_UPDATE">
-        <activity display_value="Send Notification to Confirmer">e82d764b0f8203009eb3758ce1050ee4</activity>
+        <activity display_value="Send Notification to Confirmer">7a6dc7870fc203009eb3758ce1050e9c</activity>
         <condition>true</condition>
         <condition_default/>
         <condition_type>standard</condition_type>
@@ -683,11 +685,11 @@ AEO Process Team&#13;
         <short_description/>
         <skip_during_generate>false</skip_during_generate>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2017-10-31 09:47:31</sys_created_on>
-        <sys_id>602d764b0f8203009eb3758ce1050ee6</sys_id>
+        <sys_created_on>2017-10-31 10:58:40</sys_created_on>
+        <sys_id>fe6dc7870fc203009eb3758ce1050e9d</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-10-31 09:47:31</sys_updated_on>
+        <sys_updated_on>2017-10-31 10:58:40</sys_updated_on>
     </wf_condition>
     <wf_activity action="INSERT_OR_UPDATE">
         <activity_definition display_value="Notification">0a6c97790a0a0b2756919eb960284334</activity_definition>
@@ -705,87 +707,87 @@ AEO Process Team&#13;
         <pinned_version/>
         <stage/>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2017-10-31 09:47:31</sys_created_on>
-        <sys_id>e82d764b0f8203009eb3758ce1050ede</sys_id>
+        <sys_created_on>2017-10-31 10:58:40</sys_created_on>
+        <sys_id>7e6dc7870fc203009eb3758ce1050e9a</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-10-31 09:47:31</sys_updated_on>
+        <sys_updated_on>2017-10-31 10:58:40</sys_updated_on>
         <timeout>1970-01-01 00:00:00</timeout>
         <vars/>
         <width/>
-        <workflow_version display_value="AEO Process Flow">ec2d764b0f8203009eb3758ce1050edc</workflow_version>
+        <workflow_version display_value="AEO Process Flow">f66d87870fc203009eb3758ce1050ed4</workflow_version>
         <x>816</x>
         <y>486</y>
     </wf_activity>
-    <sys_variable_value action="delete_multiple" query="document_key=e82d764b0f8203009eb3758ce1050ede"/>
+    <sys_variable_value action="delete_multiple" query="document_key=7e6dc7870fc203009eb3758ce1050e9a"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>e82d764b0f8203009eb3758ce1050ede</document_key>
+        <document_key>7e6dc7870fc203009eb3758ce1050e9a</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-10-31 10:58:40</sys_created_on>
+        <sys_id>3a6dc7870fc203009eb3758ce1050e9b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-10-31 10:58:40</sys_updated_on>
+        <value>The AEO Process ${process_name} is complete for Department: ${department}</value>
+        <variable display_value="">c35db2180a0a0ba96248a709d1b6df20</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>7e6dc7870fc203009eb3758ce1050e9a</document_key>
         <order>500</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2017-10-31 09:47:31</sys_created_on>
-        <sys_id>2c2d764b0f8203009eb3758ce1050edf</sys_id>
+        <sys_created_on>2017-10-31 10:58:40</sys_created_on>
+        <sys_id>766dc7870fc203009eb3758ce1050e9b</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-10-31 09:47:31</sys_updated_on>
+        <sys_updated_on>2017-10-31 10:58:40</sys_updated_on>
         <value>// Set the variable 'answer' to a comma-separated list of user or group sys_ids that you want the email sent to.&#13;
 answer = current.sys_created_by;</value>
         <variable display_value="">c35dae3d0a0a0ba96248a7098ed9b4aa</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>e82d764b0f8203009eb3758ce1050ede</document_key>
-        <order>100</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2017-10-31 09:47:31</sys_created_on>
-        <sys_id>602d764b0f8203009eb3758ce1050edf</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-10-31 09:47:31</sys_updated_on>
-        <value/>
-        <variable display_value="">c35daa890a0a0ba96248a709c32994d6</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>wf_activity</document>
-        <document_key>e82d764b0f8203009eb3758ce1050ede</document_key>
-        <order>150</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2017-10-31 09:47:31</sys_created_on>
-        <sys_id>642d764b0f8203009eb3758ce1050ee0</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-10-31 09:47:31</sys_updated_on>
-        <value/>
-        <variable display_value="">ae2121c70a0a0b3459708c9a60cd7312</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>wf_activity</document>
-        <document_key>e82d764b0f8203009eb3758ce1050ede</document_key>
+        <document_key>7e6dc7870fc203009eb3758ce1050e9a</document_key>
         <order>400</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2017-10-31 09:47:31</sys_created_on>
-        <sys_id>682d764b0f8203009eb3758ce1050edf</sys_id>
+        <sys_created_on>2017-10-31 10:58:40</sys_created_on>
+        <sys_id>b26dc7870fc203009eb3758ce1050e9b</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-10-31 09:47:31</sys_updated_on>
+        <sys_updated_on>2017-10-31 10:58:40</sys_updated_on>
         <value>1</value>
         <variable display_value="">6d6816cd0a6a803f0853a8df38007572</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>e82d764b0f8203009eb3758ce1050ede</document_key>
+        <document_key>7e6dc7870fc203009eb3758ce1050e9a</document_key>
+        <order>150</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-10-31 10:58:40</sys_created_on>
+        <sys_id>be6dc7870fc203009eb3758ce1050e9b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-10-31 10:58:40</sys_updated_on>
+        <value/>
+        <variable display_value="">ae2121c70a0a0b3459708c9a60cd7312</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>7e6dc7870fc203009eb3758ce1050e9a</document_key>
         <order>300</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2017-10-31 09:47:31</sys_created_on>
-        <sys_id>a02d764b0f8203009eb3758ce1050ee0</sys_id>
+        <sys_created_on>2017-10-31 10:58:40</sys_created_on>
+        <sys_id>fa6dc7870fc203009eb3758ce1050e9b</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-10-31 09:47:31</sys_updated_on>
+        <sys_updated_on>2017-10-31 10:58:40</sys_updated_on>
         <value>Hi ${sys_created_by},&#13;
 &#13;
 The AEO Process has been confirmed by  ${confirmer}&#13;
@@ -797,71 +799,71 @@ AEO Process Team</value>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>e82d764b0f8203009eb3758ce1050ede</document_key>
-        <order>200</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2017-10-31 09:47:31</sys_created_on>
-        <sys_id>ec2d764b0f8203009eb3758ce1050edf</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-10-31 09:47:31</sys_updated_on>
-        <value>The AEO Process ${process_name} is complete for Department: ${department}</value>
-        <variable display_value="">c35db2180a0a0ba96248a709d1b6df20</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>wf_activity</document>
-        <document_key>e82d764b0f8203009eb3758ce1050ede</document_key>
+        <document_key>7e6dc7870fc203009eb3758ce1050e9a</document_key>
         <order>100</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2017-10-31 09:47:31</sys_created_on>
-        <sys_id>602d764b0f8203009eb3758ce1050edf</sys_id>
+        <sys_created_on>2017-10-31 10:58:40</sys_created_on>
+        <sys_id>fe6dc7870fc203009eb3758ce1050e9a</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-10-31 09:47:31</sys_updated_on>
+        <sys_updated_on>2017-10-31 10:58:40</sys_updated_on>
         <value/>
         <variable display_value="">c35daa890a0a0ba96248a709c32994d6</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>e82d764b0f8203009eb3758ce1050ede</document_key>
+        <document_key>7e6dc7870fc203009eb3758ce1050e9a</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-10-31 10:58:40</sys_created_on>
+        <sys_id>fe6dc7870fc203009eb3758ce1050e9a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-10-31 10:58:40</sys_updated_on>
+        <value/>
+        <variable display_value="">c35daa890a0a0ba96248a709c32994d6</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>7e6dc7870fc203009eb3758ce1050e9a</document_key>
         <order>150</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2017-10-31 09:47:31</sys_created_on>
-        <sys_id>642d764b0f8203009eb3758ce1050ee0</sys_id>
+        <sys_created_on>2017-10-31 10:58:40</sys_created_on>
+        <sys_id>be6dc7870fc203009eb3758ce1050e9b</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-10-31 09:47:31</sys_updated_on>
+        <sys_updated_on>2017-10-31 10:58:40</sys_updated_on>
         <value/>
         <variable display_value="">ae2121c70a0a0b3459708c9a60cd7312</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>e82d764b0f8203009eb3758ce1050ede</document_key>
+        <document_key>7e6dc7870fc203009eb3758ce1050e9a</document_key>
         <order>200</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2017-10-31 09:47:31</sys_created_on>
-        <sys_id>ec2d764b0f8203009eb3758ce1050edf</sys_id>
+        <sys_created_on>2017-10-31 10:58:40</sys_created_on>
+        <sys_id>3a6dc7870fc203009eb3758ce1050e9b</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-10-31 09:47:31</sys_updated_on>
+        <sys_updated_on>2017-10-31 10:58:40</sys_updated_on>
         <value>The AEO Process ${process_name} is complete for Department: ${department}</value>
         <variable display_value="">c35db2180a0a0ba96248a709d1b6df20</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>e82d764b0f8203009eb3758ce1050ede</document_key>
+        <document_key>7e6dc7870fc203009eb3758ce1050e9a</document_key>
         <order>300</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2017-10-31 09:47:31</sys_created_on>
-        <sys_id>a02d764b0f8203009eb3758ce1050ee0</sys_id>
+        <sys_created_on>2017-10-31 10:58:40</sys_created_on>
+        <sys_id>fa6dc7870fc203009eb3758ce1050e9b</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-10-31 09:47:31</sys_updated_on>
+        <sys_updated_on>2017-10-31 10:58:40</sys_updated_on>
         <value>Hi ${sys_created_by},&#13;
 &#13;
 The AEO Process has been confirmed by  ${confirmer}&#13;
@@ -873,35 +875,35 @@ AEO Process Team</value>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>e82d764b0f8203009eb3758ce1050ede</document_key>
+        <document_key>7e6dc7870fc203009eb3758ce1050e9a</document_key>
         <order>400</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2017-10-31 09:47:31</sys_created_on>
-        <sys_id>682d764b0f8203009eb3758ce1050edf</sys_id>
+        <sys_created_on>2017-10-31 10:58:40</sys_created_on>
+        <sys_id>b26dc7870fc203009eb3758ce1050e9b</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-10-31 09:47:31</sys_updated_on>
+        <sys_updated_on>2017-10-31 10:58:40</sys_updated_on>
         <value>1</value>
         <variable display_value="">6d6816cd0a6a803f0853a8df38007572</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>e82d764b0f8203009eb3758ce1050ede</document_key>
+        <document_key>7e6dc7870fc203009eb3758ce1050e9a</document_key>
         <order>500</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2017-10-31 09:47:31</sys_created_on>
-        <sys_id>2c2d764b0f8203009eb3758ce1050edf</sys_id>
+        <sys_created_on>2017-10-31 10:58:40</sys_created_on>
+        <sys_id>766dc7870fc203009eb3758ce1050e9b</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-10-31 09:47:31</sys_updated_on>
+        <sys_updated_on>2017-10-31 10:58:40</sys_updated_on>
         <value>// Set the variable 'answer' to a comma-separated list of user or group sys_ids that you want the email sent to.&#13;
 answer = current.sys_created_by;</value>
         <variable display_value="">c35dae3d0a0a0ba96248a7098ed9b4aa</variable>
     </sys_variable_value>
     <wf_condition action="INSERT_OR_UPDATE">
-        <activity display_value="Send Notification to Creator">e82d764b0f8203009eb3758ce1050ede</activity>
+        <activity display_value="Send Notification to Creator">7e6dc7870fc203009eb3758ce1050e9a</activity>
         <condition>true</condition>
         <condition_default/>
         <condition_type>standard</condition_type>
@@ -915,11 +917,11 @@ answer = current.sys_created_by;</value>
         <short_description/>
         <skip_during_generate>false</skip_during_generate>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2017-10-31 09:47:31</sys_created_on>
-        <sys_id>2c2d764b0f8203009eb3758ce1050ee0</sys_id>
+        <sys_created_on>2017-10-31 10:58:40</sys_created_on>
+        <sys_id>f26dc7870fc203009eb3758ce1050e9c</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-10-31 09:47:31</sys_updated_on>
+        <sys_updated_on>2017-10-31 10:58:40</sys_updated_on>
     </wf_condition>
     <wf_activity action="INSERT_OR_UPDATE">
         <activity_definition display_value="Notification">0a6c97790a0a0b2756919eb960284334</activity_definition>
@@ -937,73 +939,176 @@ answer = current.sys_created_by;</value>
         <pinned_version/>
         <stage/>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2017-10-31 09:47:31</sys_created_on>
-        <sys_id>242d764b0f8203009eb3758ce1050ee1</sys_id>
+        <sys_created_on>2017-10-31 10:58:40</sys_created_on>
+        <sys_id>f26d87870fc203009eb3758ce1050ed8</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-10-31 09:47:31</sys_updated_on>
+        <sys_updated_on>2017-10-31 10:58:40</sys_updated_on>
         <timeout>1970-01-01 00:00:00</timeout>
         <vars/>
         <width/>
-        <workflow_version display_value="AEO Process Flow">ec2d764b0f8203009eb3758ce1050edc</workflow_version>
+        <workflow_version display_value="AEO Process Flow">f66d87870fc203009eb3758ce1050ed4</workflow_version>
         <x>16</x>
         <y>152</y>
     </wf_activity>
-    <sys_variable_value action="delete_multiple" query="document_key=242d764b0f8203009eb3758ce1050ee1"/>
+    <sys_variable_value action="delete_multiple" query="document_key=f26d87870fc203009eb3758ce1050ed8"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>242d764b0f8203009eb3758ce1050ee1</document_key>
+        <document_key>f26d87870fc203009eb3758ce1050ed8</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-10-31 10:58:40</sys_created_on>
+        <sys_id>3e6d87870fc203009eb3758ce1050ed9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-10-31 10:58:40</sys_updated_on>
+        <value>Hi ${reviewer.first_name},&#13;
+&#13;
+A New AEO process has been initiated by the  ${sys_created_by}&#13;
+&#13;
+Below is the Details:&#13;
+&#13;
+Process Name: ${process_name}&#13;
+&#13;
+Procedure Procedure Name: ${procedure.procedure_name}&#13;
+&#13;
+Aeo Status: ${aeo_status}&#13;
+&#13;
+Results: ${results}&#13;
+&#13;
+Please click the link to review and add action when necessary. ${URI}&#13;
+&#13;
+Review the Activity List below:&#13;
+&#13;
+Activity List: ${activity_list}&#13;
+</value>
+        <variable display_value="">c35db5a50a0a0ba96248a70938ae8de6</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>f26d87870fc203009eb3758ce1050ed8</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-10-31 10:58:40</sys_created_on>
+        <sys_id>7a6d87870fc203009eb3758ce1050ed8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-10-31 10:58:40</sys_updated_on>
+        <value>${reviewer}</value>
+        <variable display_value="">c35daa890a0a0ba96248a709c32994d6</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>f26d87870fc203009eb3758ce1050ed8</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-10-31 10:58:40</sys_created_on>
+        <sys_id>7a6d87870fc203009eb3758ce1050ed9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-10-31 10:58:40</sys_updated_on>
+        <value>AEO Process has been initiated for the  ${process_name}</value>
+        <variable display_value="">c35db2180a0a0ba96248a709d1b6df20</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>f26d87870fc203009eb3758ce1050ed8</document_key>
         <order>500</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2017-10-31 09:47:31</sys_created_on>
-        <sys_id>2c2d764b0f8203009eb3758ce1050ee1</sys_id>
+        <sys_created_on>2017-10-31 10:58:40</sys_created_on>
+        <sys_id>b66d87870fc203009eb3758ce1050ed9</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-10-31 09:47:31</sys_updated_on>
+        <sys_updated_on>2017-10-31 10:58:40</sys_updated_on>
         <value>// Set the variable 'answer' to a comma-separated list of user or group sys_ids that you want the email sent to.&#13;
 </value>
         <variable display_value="">c35dae3d0a0a0ba96248a7098ed9b4aa</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>242d764b0f8203009eb3758ce1050ee1</document_key>
-        <order>150</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2017-10-31 09:47:31</sys_created_on>
-        <sys_id>642d764b0f8203009eb3758ce1050ee2</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-10-31 09:47:31</sys_updated_on>
-        <value/>
-        <variable display_value="">ae2121c70a0a0b3459708c9a60cd7312</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>wf_activity</document>
-        <document_key>242d764b0f8203009eb3758ce1050ee1</document_key>
+        <document_key>f26d87870fc203009eb3758ce1050ed8</document_key>
         <order>400</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2017-10-31 09:47:31</sys_created_on>
-        <sys_id>682d764b0f8203009eb3758ce1050ee1</sys_id>
+        <sys_created_on>2017-10-31 10:58:40</sys_created_on>
+        <sys_id>f26d87870fc203009eb3758ce1050ed9</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-10-31 09:47:31</sys_updated_on>
+        <sys_updated_on>2017-10-31 10:58:40</sys_updated_on>
         <value>0</value>
         <variable display_value="">6d6816cd0a6a803f0853a8df38007572</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>242d764b0f8203009eb3758ce1050ee1</document_key>
+        <document_key>f26d87870fc203009eb3758ce1050ed8</document_key>
+        <order>150</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-10-31 10:58:40</sys_created_on>
+        <sys_id>fe6d87870fc203009eb3758ce1050ed9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-10-31 10:58:40</sys_updated_on>
+        <value/>
+        <variable display_value="">ae2121c70a0a0b3459708c9a60cd7312</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>f26d87870fc203009eb3758ce1050ed8</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-10-31 10:58:40</sys_created_on>
+        <sys_id>7a6d87870fc203009eb3758ce1050ed8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-10-31 10:58:40</sys_updated_on>
+        <value>${reviewer}</value>
+        <variable display_value="">c35daa890a0a0ba96248a709c32994d6</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>f26d87870fc203009eb3758ce1050ed8</document_key>
+        <order>150</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-10-31 10:58:40</sys_created_on>
+        <sys_id>fe6d87870fc203009eb3758ce1050ed9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-10-31 10:58:40</sys_updated_on>
+        <value/>
+        <variable display_value="">ae2121c70a0a0b3459708c9a60cd7312</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>f26d87870fc203009eb3758ce1050ed8</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-10-31 10:58:40</sys_created_on>
+        <sys_id>7a6d87870fc203009eb3758ce1050ed9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-10-31 10:58:40</sys_updated_on>
+        <value>AEO Process has been initiated for the  ${process_name}</value>
+        <variable display_value="">c35db2180a0a0ba96248a709d1b6df20</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>f26d87870fc203009eb3758ce1050ed8</document_key>
         <order>300</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2017-10-31 09:47:31</sys_created_on>
-        <sys_id>a02d764b0f8203009eb3758ce1050ee2</sys_id>
+        <sys_created_on>2017-10-31 10:58:40</sys_created_on>
+        <sys_id>3e6d87870fc203009eb3758ce1050ed9</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-10-31 09:47:31</sys_updated_on>
+        <sys_updated_on>2017-10-31 10:58:40</sys_updated_on>
         <value>Hi ${reviewer.first_name},&#13;
 &#13;
 A New AEO process has been initiated by the  ${sys_created_by}&#13;
@@ -1028,138 +1133,35 @@ Activity List: ${activity_list}&#13;
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>242d764b0f8203009eb3758ce1050ee1</document_key>
-        <order>100</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2017-10-31 09:47:31</sys_created_on>
-        <sys_id>a42d764b0f8203009eb3758ce1050ee1</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-10-31 09:47:31</sys_updated_on>
-        <value>${reviewer}</value>
-        <variable display_value="">c35daa890a0a0ba96248a709c32994d6</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>wf_activity</document>
-        <document_key>242d764b0f8203009eb3758ce1050ee1</document_key>
-        <order>200</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2017-10-31 09:47:31</sys_created_on>
-        <sys_id>ec2d764b0f8203009eb3758ce1050ee1</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-10-31 09:47:31</sys_updated_on>
-        <value>AEO Process has been initiated for the  ${process_name}</value>
-        <variable display_value="">c35db2180a0a0ba96248a709d1b6df20</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>wf_activity</document>
-        <document_key>242d764b0f8203009eb3758ce1050ee1</document_key>
-        <order>100</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2017-10-31 09:47:31</sys_created_on>
-        <sys_id>a42d764b0f8203009eb3758ce1050ee1</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-10-31 09:47:31</sys_updated_on>
-        <value>${reviewer}</value>
-        <variable display_value="">c35daa890a0a0ba96248a709c32994d6</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>wf_activity</document>
-        <document_key>242d764b0f8203009eb3758ce1050ee1</document_key>
-        <order>150</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2017-10-31 09:47:31</sys_created_on>
-        <sys_id>642d764b0f8203009eb3758ce1050ee2</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-10-31 09:47:31</sys_updated_on>
-        <value/>
-        <variable display_value="">ae2121c70a0a0b3459708c9a60cd7312</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>wf_activity</document>
-        <document_key>242d764b0f8203009eb3758ce1050ee1</document_key>
-        <order>200</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2017-10-31 09:47:31</sys_created_on>
-        <sys_id>ec2d764b0f8203009eb3758ce1050ee1</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-10-31 09:47:31</sys_updated_on>
-        <value>AEO Process has been initiated for the  ${process_name}</value>
-        <variable display_value="">c35db2180a0a0ba96248a709d1b6df20</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>wf_activity</document>
-        <document_key>242d764b0f8203009eb3758ce1050ee1</document_key>
-        <order>300</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2017-10-31 09:47:31</sys_created_on>
-        <sys_id>a02d764b0f8203009eb3758ce1050ee2</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-10-31 09:47:31</sys_updated_on>
-        <value>Hi ${reviewer.first_name},&#13;
-&#13;
-A New AEO process has been initiated by the  ${sys_created_by}&#13;
-&#13;
-Below is the Details:&#13;
-&#13;
-Process Name: ${process_name}&#13;
-&#13;
-Procedure Procedure Name: ${procedure.procedure_name}&#13;
-&#13;
-Aeo Status: ${aeo_status}&#13;
-&#13;
-Results: ${results}&#13;
-&#13;
-Please click the link to review and add action when necessary. ${URI}&#13;
-&#13;
-Review the Activity List below:&#13;
-&#13;
-Activity List: ${activity_list}&#13;
-</value>
-        <variable display_value="">c35db5a50a0a0ba96248a70938ae8de6</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>wf_activity</document>
-        <document_key>242d764b0f8203009eb3758ce1050ee1</document_key>
+        <document_key>f26d87870fc203009eb3758ce1050ed8</document_key>
         <order>400</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2017-10-31 09:47:31</sys_created_on>
-        <sys_id>682d764b0f8203009eb3758ce1050ee1</sys_id>
+        <sys_created_on>2017-10-31 10:58:40</sys_created_on>
+        <sys_id>f26d87870fc203009eb3758ce1050ed9</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-10-31 09:47:31</sys_updated_on>
+        <sys_updated_on>2017-10-31 10:58:40</sys_updated_on>
         <value>0</value>
         <variable display_value="">6d6816cd0a6a803f0853a8df38007572</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>242d764b0f8203009eb3758ce1050ee1</document_key>
+        <document_key>f26d87870fc203009eb3758ce1050ed8</document_key>
         <order>500</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2017-10-31 09:47:31</sys_created_on>
-        <sys_id>2c2d764b0f8203009eb3758ce1050ee1</sys_id>
+        <sys_created_on>2017-10-31 10:58:40</sys_created_on>
+        <sys_id>b66d87870fc203009eb3758ce1050ed9</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-10-31 09:47:31</sys_updated_on>
+        <sys_updated_on>2017-10-31 10:58:40</sys_updated_on>
         <value>// Set the variable 'answer' to a comma-separated list of user or group sys_ids that you want the email sent to.&#13;
 </value>
         <variable display_value="">c35dae3d0a0a0ba96248a7098ed9b4aa</variable>
     </sys_variable_value>
     <wf_condition action="INSERT_OR_UPDATE">
-        <activity display_value="Send Notification to Reviewer">242d764b0f8203009eb3758ce1050ee1</activity>
+        <activity display_value="Send Notification to Reviewer">f26d87870fc203009eb3758ce1050ed8</activity>
         <condition>true</condition>
         <condition_default/>
         <condition_type>standard</condition_type>
@@ -1173,11 +1175,11 @@ Activity List: ${activity_list}&#13;
         <short_description/>
         <skip_during_generate>false</skip_during_generate>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2017-10-31 09:47:31</sys_created_on>
-        <sys_id>a82d764b0f8203009eb3758ce1050ee2</sys_id>
+        <sys_created_on>2017-10-31 10:58:40</sys_created_on>
+        <sys_id>b66d87870fc203009eb3758ce1050eda</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-10-31 09:47:31</sys_updated_on>
+        <sys_updated_on>2017-10-31 10:58:40</sys_updated_on>
     </wf_condition>
     <wf_activity action="INSERT_OR_UPDATE">
         <activity_definition display_value="Wait for condition">d93a02ae0a0a0aa30077abad3fdac035</activity_definition>
@@ -1195,44 +1197,44 @@ Activity List: ${activity_list}&#13;
         <pinned_version/>
         <stage/>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2017-10-31 09:47:31</sys_created_on>
-        <sys_id>e82d764b0f8203009eb3758ce1050ee7</sys_id>
+        <sys_created_on>2017-10-31 10:58:40</sys_created_on>
+        <sys_id>766dc7870fc203009eb3758ce1050e9e</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-10-31 09:47:31</sys_updated_on>
+        <sys_updated_on>2017-10-31 10:58:40</sys_updated_on>
         <timeout>1970-01-01 00:00:00</timeout>
         <vars/>
         <width/>
-        <workflow_version display_value="AEO Process Flow">ec2d764b0f8203009eb3758ce1050edc</workflow_version>
+        <workflow_version display_value="AEO Process Flow">f66d87870fc203009eb3758ce1050ed4</workflow_version>
         <x>86</x>
         <y>350</y>
     </wf_activity>
-    <sys_variable_value action="delete_multiple" query="document_key=e82d764b0f8203009eb3758ce1050ee7"/>
+    <sys_variable_value action="delete_multiple" query="document_key=766dc7870fc203009eb3758ce1050e9e"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>e82d764b0f8203009eb3758ce1050ee7</document_key>
+        <document_key>766dc7870fc203009eb3758ce1050e9e</document_key>
         <order>1</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2017-10-31 09:47:31</sys_created_on>
-        <sys_id>202d764b0f8203009eb3758ce1050ee8</sys_id>
+        <sys_created_on>2017-10-31 10:58:40</sys_created_on>
+        <sys_id>ba6dc7870fc203009eb3758ce1050e9e</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-10-31 09:47:31</sys_updated_on>
+        <sys_updated_on>2017-10-31 10:58:40</sys_updated_on>
         <value>aeo_status=Confirm^EQ</value>
         <variable display_value="">c35dc4cd0a0a0ba96248a70990c1ac54</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>e82d764b0f8203009eb3758ce1050ee7</document_key>
+        <document_key>766dc7870fc203009eb3758ce1050e9e</document_key>
         <order>2</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2017-10-31 09:47:31</sys_created_on>
-        <sys_id>6c2d764b0f8203009eb3758ce1050ee7</sys_id>
+        <sys_created_on>2017-10-31 10:58:40</sys_created_on>
+        <sys_id>f66dc7870fc203009eb3758ce1050e9e</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-10-31 09:47:31</sys_updated_on>
+        <sys_updated_on>2017-10-31 10:58:40</sys_updated_on>
         <value>// Set the variable 'answer' to true or false to indicate if the condition has been met or not.&#13;
 answer = true;&#13;
 </value>
@@ -1240,36 +1242,36 @@ answer = true;&#13;
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>e82d764b0f8203009eb3758ce1050ee7</document_key>
+        <document_key>766dc7870fc203009eb3758ce1050e9e</document_key>
         <order>1</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2017-10-31 09:47:31</sys_created_on>
-        <sys_id>202d764b0f8203009eb3758ce1050ee8</sys_id>
+        <sys_created_on>2017-10-31 10:58:40</sys_created_on>
+        <sys_id>ba6dc7870fc203009eb3758ce1050e9e</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-10-31 09:47:31</sys_updated_on>
+        <sys_updated_on>2017-10-31 10:58:40</sys_updated_on>
         <value>aeo_status=Confirm^EQ</value>
         <variable display_value="">c35dc4cd0a0a0ba96248a70990c1ac54</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>e82d764b0f8203009eb3758ce1050ee7</document_key>
+        <document_key>766dc7870fc203009eb3758ce1050e9e</document_key>
         <order>2</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2017-10-31 09:47:31</sys_created_on>
-        <sys_id>6c2d764b0f8203009eb3758ce1050ee7</sys_id>
+        <sys_created_on>2017-10-31 10:58:40</sys_created_on>
+        <sys_id>f66dc7870fc203009eb3758ce1050e9e</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-10-31 09:47:31</sys_updated_on>
+        <sys_updated_on>2017-10-31 10:58:40</sys_updated_on>
         <value>// Set the variable 'answer' to true or false to indicate if the condition has been met or not.&#13;
 answer = true;&#13;
 </value>
         <variable display_value="">c35debce0a0a0ba96248a709440cf31a</variable>
     </sys_variable_value>
     <wf_condition action="INSERT_OR_UPDATE">
-        <activity display_value="Wait for Change of Status">e82d764b0f8203009eb3758ce1050ee7</activity>
+        <activity display_value="Wait for Change of Status">766dc7870fc203009eb3758ce1050e9e</activity>
         <condition>true</condition>
         <condition_default/>
         <condition_type>standard</condition_type>
@@ -1283,124 +1285,124 @@ answer = true;&#13;
         <short_description/>
         <skip_during_generate>false</skip_during_generate>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2017-10-31 09:47:31</sys_created_on>
-        <sys_id>642d764b0f8203009eb3758ce1050ee8</sys_id>
+        <sys_created_on>2017-10-31 10:58:40</sys_created_on>
+        <sys_id>fe6dc7870fc203009eb3758ce1050e9e</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-10-31 09:47:31</sys_updated_on>
+        <sys_updated_on>2017-10-31 10:58:40</sys_updated_on>
     </wf_condition>
     <wf_transition action="INSERT_OR_UPDATE">
-        <condition display_value="Complete">a02df64b0f8203009eb3758ce1050e2d</condition>
-        <from display_value="Check AEO Status">602df64b0f8203009eb3758ce1050e2c</from>
+        <condition display_value="Review">766d87870fc203009eb3758ce1050edc</condition>
+        <from display_value="Check AEO Status">be6d87870fc203009eb3758ce1050eda</from>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2017-10-31 09:47:31</sys_created_on>
-        <sys_id>282df64b0f8203009eb3758ce1050e2e</sys_id>
+        <sys_created_on>2017-10-31 10:58:40</sys_created_on>
+        <sys_id>326dc7870fc203009eb3758ce1050ea1</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-10-31 09:47:31</sys_updated_on>
-        <to display_value="Send Notification to Creator">e82d764b0f8203009eb3758ce1050ede</to>
+        <sys_updated_on>2017-10-31 10:58:40</sys_updated_on>
+        <to display_value="Send Notification to Reviewer">f26d87870fc203009eb3758ce1050ed8</to>
     </wf_transition>
     <wf_transition action="INSERT_OR_UPDATE">
-        <condition display_value="Always">642d764b0f8203009eb3758ce1050ee7</condition>
-        <from display_value="">e42d764b0f8203009eb3758ce1050ee6</from>
+        <condition display_value="Always">7e6d87870fc203009eb3758ce1050edd</condition>
+        <from display_value="Begin">f26d87870fc203009eb3758ce1050edd</from>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2017-10-31 09:47:31</sys_created_on>
-        <sys_id>282df64b0f8203009eb3758ce1050e2f</sys_id>
+        <sys_created_on>2017-10-31 10:58:40</sys_created_on>
+        <sys_id>3a6dc7870fc203009eb3758ce1050ea0</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-10-31 09:47:31</sys_updated_on>
-        <to display_value="Check AEO Status">602df64b0f8203009eb3758ce1050e2c</to>
+        <sys_updated_on>2017-10-31 10:58:40</sys_updated_on>
+        <to display_value="Send Notification to Reviewer">f26d87870fc203009eb3758ce1050ed8</to>
     </wf_transition>
     <wf_transition action="INSERT_OR_UPDATE">
-        <condition display_value="Cancelled">242df64b0f8203009eb3758ce1050e2d</condition>
-        <from display_value="Check AEO Status">602df64b0f8203009eb3758ce1050e2c</from>
+        <condition display_value="Complete">f26d87870fc203009eb3758ce1050edc</condition>
+        <from display_value="Check AEO Status">be6d87870fc203009eb3758ce1050eda</from>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2017-10-31 09:47:31</sys_created_on>
-        <sys_id>2c2df64b0f8203009eb3758ce1050e2e</sys_id>
+        <sys_created_on>2017-10-31 10:58:40</sys_created_on>
+        <sys_id>3e6dc7870fc203009eb3758ce1050ea0</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-10-31 09:47:31</sys_updated_on>
-        <to display_value="End">202d764b0f8203009eb3758ce1050ee3</to>
+        <sys_updated_on>2017-10-31 10:58:40</sys_updated_on>
+        <to display_value="Send Notification to Creator">7e6dc7870fc203009eb3758ce1050e9a</to>
     </wf_transition>
     <wf_transition action="INSERT_OR_UPDATE">
-        <condition display_value="Always">642d764b0f8203009eb3758ce1050ee8</condition>
-        <from display_value="Wait for Change of Status">e82d764b0f8203009eb3758ce1050ee7</from>
+        <condition display_value="Always">f66dc7870fc203009eb3758ce1050e9a</condition>
+        <from display_value="">f66dc7870fc203009eb3758ce1050e99</from>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2017-10-31 09:47:31</sys_created_on>
-        <sys_id>2c2df64b0f8203009eb3758ce1050e2f</sys_id>
+        <sys_created_on>2017-10-31 10:58:40</sys_created_on>
+        <sys_id>726dc7870fc203009eb3758ce1050ea0</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-10-31 09:47:31</sys_updated_on>
-        <to display_value="Send Notification to Confirmer">e82d764b0f8203009eb3758ce1050ee4</to>
+        <sys_updated_on>2017-10-31 10:58:40</sys_updated_on>
+        <to display_value="Check AEO Status">be6d87870fc203009eb3758ce1050eda</to>
     </wf_transition>
     <wf_transition action="INSERT_OR_UPDATE">
-        <condition display_value="Always">642d764b0f8203009eb3758ce1050ee4</condition>
-        <from display_value="Begin">6c2d764b0f8203009eb3758ce1050ee3</from>
+        <condition display_value="Always">b66d87870fc203009eb3758ce1050eda</condition>
+        <from display_value="Send Notification to Reviewer">f26d87870fc203009eb3758ce1050ed8</from>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2017-10-31 09:47:31</sys_created_on>
-        <sys_id>642df64b0f8203009eb3758ce1050e2f</sys_id>
+        <sys_created_on>2017-10-31 10:58:40</sys_created_on>
+        <sys_id>766dc7870fc203009eb3758ce1050ea0</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-10-31 09:47:31</sys_updated_on>
-        <to display_value="Send Notification to Reviewer">242d764b0f8203009eb3758ce1050ee1</to>
+        <sys_updated_on>2017-10-31 10:58:40</sys_updated_on>
+        <to display_value="Wait for Change of Status">766dc7870fc203009eb3758ce1050e9e</to>
     </wf_transition>
     <wf_transition action="INSERT_OR_UPDATE">
-        <condition display_value="Always">2c2d764b0f8203009eb3758ce1050ee0</condition>
-        <from display_value="Send Notification to Creator">e82d764b0f8203009eb3758ce1050ede</from>
+        <condition display_value="Always">fe6dc7870fc203009eb3758ce1050e9d</condition>
+        <from display_value="Send Notification to Confirmer">7a6dc7870fc203009eb3758ce1050e9c</from>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2017-10-31 09:47:31</sys_created_on>
-        <sys_id>a02df64b0f8203009eb3758ce1050e2f</sys_id>
+        <sys_created_on>2017-10-31 10:58:40</sys_created_on>
+        <sys_id>7a6dc7870fc203009eb3758ce1050ea1</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-10-31 09:47:31</sys_updated_on>
-        <to display_value="End">202d764b0f8203009eb3758ce1050ee3</to>
+        <sys_updated_on>2017-10-31 10:58:40</sys_updated_on>
+        <to display_value="">f66dc7870fc203009eb3758ce1050e99</to>
     </wf_transition>
     <wf_transition action="INSERT_OR_UPDATE">
-        <condition display_value="Review">a42df64b0f8203009eb3758ce1050e2d</condition>
-        <from display_value="Check AEO Status">602df64b0f8203009eb3758ce1050e2c</from>
+        <condition display_value="Always">f26dc7870fc203009eb3758ce1050e9c</condition>
+        <from display_value="Send Notification to Creator">7e6dc7870fc203009eb3758ce1050e9a</from>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2017-10-31 09:47:31</sys_created_on>
-        <sys_id>a82df64b0f8203009eb3758ce1050e2e</sys_id>
+        <sys_created_on>2017-10-31 10:58:40</sys_created_on>
+        <sys_id>b66dc7870fc203009eb3758ce1050ea1</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-10-31 09:47:31</sys_updated_on>
-        <to display_value="Send Notification to Reviewer">242d764b0f8203009eb3758ce1050ee1</to>
+        <sys_updated_on>2017-10-31 10:58:40</sys_updated_on>
+        <to display_value="End">326d87870fc203009eb3758ce1050ed7</to>
     </wf_transition>
     <wf_transition action="INSERT_OR_UPDATE">
-        <condition display_value="Always">602d764b0f8203009eb3758ce1050ee6</condition>
-        <from display_value="Send Notification to Confirmer">e82d764b0f8203009eb3758ce1050ee4</from>
+        <condition display_value="Cancelled">726d87870fc203009eb3758ce1050edc</condition>
+        <from display_value="Check AEO Status">be6d87870fc203009eb3758ce1050eda</from>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2017-10-31 09:47:31</sys_created_on>
-        <sys_id>ec2df64b0f8203009eb3758ce1050e2e</sys_id>
+        <sys_created_on>2017-10-31 10:58:40</sys_created_on>
+        <sys_id>be6dc7870fc203009eb3758ce1050ea0</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-10-31 09:47:31</sys_updated_on>
-        <to display_value="">e42d764b0f8203009eb3758ce1050ee6</to>
+        <sys_updated_on>2017-10-31 10:58:40</sys_updated_on>
+        <to display_value="End">326d87870fc203009eb3758ce1050ed7</to>
     </wf_transition>
     <wf_transition action="INSERT_OR_UPDATE">
-        <condition display_value="Always">a82d764b0f8203009eb3758ce1050ee2</condition>
-        <from display_value="Send Notification to Reviewer">242d764b0f8203009eb3758ce1050ee1</from>
+        <condition display_value="Always">fe6dc7870fc203009eb3758ce1050e9e</condition>
+        <from display_value="Wait for Change of Status">766dc7870fc203009eb3758ce1050e9e</from>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2017-10-31 09:47:31</sys_created_on>
-        <sys_id>ec2df64b0f8203009eb3758ce1050e2f</sys_id>
+        <sys_created_on>2017-10-31 10:58:40</sys_created_on>
+        <sys_id>f26dc7870fc203009eb3758ce1050ea1</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-10-31 09:47:31</sys_updated_on>
-        <to display_value="Wait for Change of Status">e82d764b0f8203009eb3758ce1050ee7</to>
+        <sys_updated_on>2017-10-31 10:58:40</sys_updated_on>
+        <to display_value="Send Notification to Confirmer">7a6dc7870fc203009eb3758ce1050e9c</to>
     </wf_transition>
     <wf_estimated_runtime_config action="INSERT_OR_UPDATE">
         <estimated_run_time/>
         <no_of_data_points>1</no_of_data_points>
         <percentage_threshold_ert>20</percentage_threshold_ert>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2017-10-31 09:47:31</sys_created_on>
-        <sys_id>a02d764b0f8203009eb3758ce1050edd</sys_id>
+        <sys_created_on>2017-10-31 10:58:40</sys_created_on>
+        <sys_id>fa6d87870fc203009eb3758ce1050ed4</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-10-31 09:47:31</sys_updated_on>
-        <workflow_version display_value="AEO Process Flow">ec2d764b0f8203009eb3758ce1050edc</workflow_version>
+        <sys_updated_on>2017-10-31 10:58:40</sys_updated_on>
+        <workflow_version display_value="AEO Process Flow">f66d87870fc203009eb3758ce1050ed4</workflow_version>
     </wf_estimated_runtime_config>
-    <wf_workflow_version action="update_multiple" query="workflow=7ba3fabe0f4e43009eb3758ce1050e43^sys_id!=ec2d764b0f8203009eb3758ce1050edc">
+    <wf_workflow_version action="update_multiple" query="workflow=7ba3fabe0f4e43009eb3758ce1050e43^sys_id!=f66d87870fc203009eb3758ce1050ed4">
         <published>false</published>
     </wf_workflow_version>
 </record_update>
