@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_98145_mna.AEOGetValuefromServer</api_name>
+        <client_callable>true</client_callable>
+        <description>Get Value from Server for Client Script to fill Reviewer and Confirmer for a Procedure</description>
+        <name>AEOGetValuefromServer</name>
+        <script><![CDATA[var AEOGetValuefromServer = Class.create();
+AEOGetValuefromServer.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+getProcedure : function() {
+		// build new response xml element for result
+		var result = this.newItem("result");
+		var procName = this.getParameter("sysparm_proc_name");
+		result.setAttribute("message", "return procedure");
+		
+		var procedureinfo = new GlideRecord("x_98145_mna_aeo_procedures");
+		procedureinfo.addQuery('sys_id',procName);
+		procedureinfo.query();   // Issue the query to the database to get relevant records
+	  while(procedureinfo.next()) {
+		  this._addProcedure("reviewer", procedureinfo.getValue('reviewer'));
+		  this._addProcedure("confirmer", procedureinfo.getValue('confirmer'));
+	  }
+		// all items are returned to the client through the inherited methods of AbstractAjaxProcessor
+	},
+
+	_addProcedure : function(name, value) {
+		var Procs = this.newItem("procedure");
+		Procs.setAttribute("name", name);
+		Procs.setAttribute("value", value);
+	},
+    type: 'AEOGetValuefromServer'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-10-31 07:05:59</sys_created_on>
+        <sys_id>65a456470f4203009eb3758ce1050e82</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>AEOGetValuefromServer</sys_name>
+        <sys_package display_value="MnA" source="x_98145_mna">54fc72fc0f0203009eb3758ce1050ece</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="MnA">54fc72fc0f0203009eb3758ce1050ece</sys_scope>
+        <sys_update_name>sys_script_include_65a456470f4203009eb3758ce1050e82</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-10-31 07:30:49</sys_updated_on>
+    </sys_script_include>
+</record_update>

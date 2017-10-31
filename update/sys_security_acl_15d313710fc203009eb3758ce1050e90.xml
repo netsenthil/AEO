@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_security_acl">
+    <sys_security_acl action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <admin_overrides>true</admin_overrides>
+        <advanced>false</advanced>
+        <condition/>
+        <description>Default access control on x_98145_mna_process_scheduler</description>
+        <name>x_98145_mna_process_scheduler</name>
+        <operation display_value="read">read</operation>
+        <script/>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-10-27 14:14:18</sys_created_on>
+        <sys_id>15d313710fc203009eb3758ce1050e90</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_98145_mna_process_scheduler</sys_name>
+        <sys_package display_value="MnA" source="x_98145_mna">54fc72fc0f0203009eb3758ce1050ece</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="MnA">54fc72fc0f0203009eb3758ce1050ece</sys_scope>
+        <sys_update_name>sys_security_acl_15d313710fc203009eb3758ce1050e90</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-10-27 14:14:18</sys_updated_on>
+        <type display_value="record">record</type>
+    </sys_security_acl>
+</record_update>

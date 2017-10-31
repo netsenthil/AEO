@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>procedure</field>
+        <global>true</global>
+        <messages/>
+        <name>Procedure OnChange</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+  
+   if (isLoading || newValue === '') {
+      return;
+   }
+  var ga = new GlideAjax("AEOGetValuefromServer");
+	var procname = g_form.getValue('procedure');
+	//alert(procname);
+	
+	ga.addParam("sysparm_name",  'getProcedure');
+  ga.addParam("sysparm_proc_name",  procname);
+ga.getXML(ajaxResponse);
+
+function ajaxResponse(serverResponse) {
+	// get result element and attributes
+
+	var result = serverResponse.responseXML.getElementsByTagName("result");
+	var message = result[0].getAttribute("message");
+
+	//check for message attribute and alert user
+
+	//if(message)
+	//	alert(message);
+
+	//build output to display on client for testing
+	var output = "";
+
+	// get favorite elements
+	var procedures = serverResponse.responseXML.getElementsByTagName("procedure");
+	for(var i = 0; i < procedures.length; i++) {
+		var name = procedures[i].getAttribute("name");
+		var value = procedures[i].getAttribute("value");
+		//output += name + " = " + value + "\n";
+		 g_form.setValue(name, value);
+	}
+	}
+   
+}
+]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-10-31 04:17:17</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>eb1d6dc30f0203009eb3758ce1050e13</sys_id>
+        <sys_mod_count>15</sys_mod_count>
+        <sys_name>Procedure OnChange</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="MnA" source="x_98145_mna">54fc72fc0f0203009eb3758ce1050ece</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="MnA">54fc72fc0f0203009eb3758ce1050ece</sys_scope>
+        <sys_update_name>sys_script_client_eb1d6dc30f0203009eb3758ce1050e13</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-10-31 07:34:19</sys_updated_on>
+        <table>x_98145_mna_aeo_process</table>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

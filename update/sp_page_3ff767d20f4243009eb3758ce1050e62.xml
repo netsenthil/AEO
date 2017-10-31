@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_page">
+    <sp_page action="INSERT_OR_UPDATE">
+        <css/>
+        <draft>false</draft>
+        <id>home</id>
+        <internal>false</internal>
+        <public>true</public>
+        <roles/>
+        <short_description/>
+        <sys_class_name>sp_page</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-10-29 04:59:47</sys_created_on>
+        <sys_id>3ff767d20f4243009eb3758ce1050e62</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>home</sys_name>
+        <sys_package display_value="MnA" source="x_98145_mna">54fc72fc0f0203009eb3758ce1050ece</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="MnA">54fc72fc0f0203009eb3758ce1050ece</sys_scope>
+        <sys_update_name>sp_page_3ff767d20f4243009eb3758ce1050e62</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-10-29 04:59:47</sys_updated_on>
+        <title>AEO Home Page</title>
+    </sp_page>
+    <sys_translated_text action="delete_multiple" query="documentkey=3ff767d20f4243009eb3758ce1050e62"/>
+</record_update>

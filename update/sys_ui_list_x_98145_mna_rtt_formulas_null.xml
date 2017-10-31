@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_list parent="" relationship="" sys_domain="global" table="x_98145_mna_rtt_formulas" version="2" view="">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>number</element>
+            <list_id display_value="x_98145_mna_rtt_formulas" element="NULL" name="x_98145_mna_rtt_formulas" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">320247b00f4203009eb3758ce1050eda</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-10-24 10:22:39</sys_created_on>
+            <sys_id>b60247b00f4203009eb3758ce1050eda</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-10-24 10:22:39</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>primary_creative</element>
+            <list_id display_value="x_98145_mna_rtt_formulas" element="NULL" name="x_98145_mna_rtt_formulas" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">320247b00f4203009eb3758ce1050eda</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-10-24 10:22:39</sys_created_on>
+            <sys_id>3a0247b00f4203009eb3758ce1050eda</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-10-24 10:22:39</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>primary_new</element>
+            <list_id display_value="x_98145_mna_rtt_formulas" element="NULL" name="x_98145_mna_rtt_formulas" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">320247b00f4203009eb3758ce1050eda</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-10-24 10:22:39</sys_created_on>
+            <sys_id>ba0247b00f4203009eb3758ce1050eda</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-10-24 10:22:39</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>primary_prescreen</element>
+            <list_id display_value="x_98145_mna_rtt_formulas" element="NULL" name="x_98145_mna_rtt_formulas" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">320247b00f4203009eb3758ce1050eda</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-10-24 10:22:39</sys_created_on>
+            <sys_id>3e0247b00f4203009eb3758ce1050eda</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-10-24 10:22:39</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>x_98145_mna_rtt_formulas</name>
+            <parent/>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-10-24 10:22:39</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>320247b00f4203009eb3758ce1050eda</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_98145_mna_rtt_formulas</sys_name>
+            <sys_package display_value="MnA" source="x_98145_mna">54fc72fc0f0203009eb3758ce1050ece</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="MnA">54fc72fc0f0203009eb3758ce1050ece</sys_scope>
+            <sys_update_name>sys_ui_list_x_98145_mna_rtt_formulas_null</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-10-24 10:22:39</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>

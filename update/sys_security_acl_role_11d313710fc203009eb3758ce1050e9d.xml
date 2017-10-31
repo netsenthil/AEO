@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-10-27 14:14:18</sys_created_on>
+        <sys_id>11d313710fc203009eb3758ce1050e9d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_98145_mna_process_scheduler.x_98145_mna.user</sys_name>
+        <sys_package display_value="MnA" source="x_98145_mna">54fc72fc0f0203009eb3758ce1050ece</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="MnA">54fc72fc0f0203009eb3758ce1050ece</sys_scope>
+        <sys_security_acl display_value="x_98145_mna_process_scheduler">19d313710fc203009eb3758ce1050e9a</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_11d313710fc203009eb3758ce1050e9d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-10-27 14:14:18</sys_updated_on>
+        <sys_user_role display_value="x_98145_mna.user" name="x_98145_mna.user">20fc36fc0f0203009eb3758ce1050e9d</sys_user_role>
+        <transaction_id/>
+    </sys_security_acl_role>
+</record_update>

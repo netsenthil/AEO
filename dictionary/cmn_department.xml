@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element create_roles="user_admin" label="Department" max_length="40" name="cmn_department" type="collection">
+        <element label="Location" max_length="32" name="x_98145_mna_location" reference="cmn_location" type="reference"/>
+        <index name="index">
+            <element name="x_98145_mna_location"/>
+        </index>
+    </element>
+</database>

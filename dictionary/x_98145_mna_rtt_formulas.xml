@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element max_length="40" name="x_98145_mna_rtt_formulas" type="collection">
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Primary Creative" max_length="32" name="primary_creative" reference="sys_user" type="reference"/>
+        <element label="Primary new" max_length="32" name="primary_new" reference="sys_user" type="reference"/>
+        <element label="Primary PreScreen" max_length="32" name="primary_prescreen" reference="sys_user" type="reference"/>
+    </element>
+</database>

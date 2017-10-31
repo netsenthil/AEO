@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="AEO Procedures" max_length="40" name="x_98145_mna_aeo_procedures" type="collection">
+        <element label="Area" mandatory="true" max_length="32" name="area" reference="x_98145_mna_area" type="reference"/>
+        <element label="Confirmer" max_length="32" name="confirmer" reference="sys_user" type="reference"/>
+        <element label="Creator" max_length="32" name="creator" reference="sys_user" type="reference"/>
+        <element display="true" label="Procedure Name" mandatory="true" max_length="100" name="procedure_name" type="string"/>
+        <element label="Reviewer" max_length="32" name="reviewer" reference="sys_user" type="reference"/>
+        <index name="index">
+            <element name="area"/>
+        </index>
+        <index name="index2">
+            <element name="creator"/>
+        </index>
+        <index name="index3">
+            <element name="reviewer"/>
+        </index>
+        <index name="index4">
+            <element name="confirmer"/>
+        </index>
+    </element>
+</database>

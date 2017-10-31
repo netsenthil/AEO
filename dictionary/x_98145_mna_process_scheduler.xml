@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Process Scheduler" max_length="40" name="x_98145_mna_process_scheduler" type="collection">
+        <element label="Department" mandatory="true" max_length="32" name="department" reference="cmn_department" type="reference"/>
+        <element active="false" label="Location" mandatory="true" max_length="32" name="location" reference="cmn_location" type="reference"/>
+        <element label="Procedure" mandatory="true" max_length="32" name="procedure" reference="x_98145_mna_aeo_procedures" type="reference"/>
+        <element display="true" label="Schedule Name" mandatory="true" max_length="100" name="schedule_name" type="string"/>
+        <index name="index">
+            <element name="location"/>
+        </index>
+        <index name="index2">
+            <element name="procedure"/>
+        </index>
+        <index name="index3">
+            <element name="department"/>
+        </index>
+    </element>
+</database>

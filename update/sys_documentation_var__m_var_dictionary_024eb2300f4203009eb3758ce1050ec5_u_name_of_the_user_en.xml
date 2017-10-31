@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="u_name_of_the_user" label="Name of the User" language="en" table="var__m_var_dictionary_024eb2300f4203009eb3758ce1050ec5">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>u_name_of_the_user</element>
+            <help/>
+            <hint/>
+            <label>Name of the User</label>
+            <language>en</language>
+            <name>var__m_var_dictionary_024eb2300f4203009eb3758ce1050ec5</name>
+            <plural>Name of the User</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-10-24 10:21:02</sys_created_on>
+            <sys_id>1fa10f700f4203009eb3758ce1050ef0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Name of the User</sys_name>
+            <sys_package display_value="MnA" source="x_98145_mna">54fc72fc0f0203009eb3758ce1050ece</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="MnA">54fc72fc0f0203009eb3758ce1050ece</sys_scope>
+            <sys_update_name>sys_documentation_var__m_var_dictionary_024eb2300f4203009eb3758ce1050ec5_u_name_of_the_user_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-10-24 10:21:02</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>
